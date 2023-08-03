@@ -1,4 +1,4 @@
-Voici quelques exercices et informations destines aux etudiants de 42.
+Voici quelques exercices et informations principalement destines aux etudiants de 42.
 
 Cela devrait permettre de mieux comprendre le fonctionnement de certains points importants en programmation.
 
