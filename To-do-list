@@ -1,0 +1,11 @@
+- Faire des exercices sur les pointeurs.
+    Commencer par un char *, puis un int *. 
+    Montrer qu'on peut decomposer une fonction en plusieurs si besoin.
+
+- Faire des exercices sur malloc et la memoire en general. (segfault, leak...)
+    Expliquer la protection des malloc.
+
+- Faire des exercices sur les Makefile ?
+    Couleurs, barres de chargement, fonctions, --silent, obj dans un dossier... tout en faisant attention a la norminette.
+
+- Les algo !

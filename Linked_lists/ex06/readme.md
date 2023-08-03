@@ -1,0 +1,3 @@
+
+
+Le terminal devra afficher :
