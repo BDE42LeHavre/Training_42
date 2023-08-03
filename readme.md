@@ -22,7 +22,7 @@ N'hesitez pas a lancer les programmes afin de voir leur resultat avant d'ajouter
 
 <h2>Le mot de la fin</h2>
 
-Si vous voyez des erreurs ou voulez ajouter quoi que ce soit (exercices, explications, etc.), vous pouvez vous diriger sur le canal slack `42lehavre_random` ou bien contacter directement [cpothin](https://profile.intra.42.fr/users/cpothin) ou des membres du BDE.
+Si vous voyez des erreurs ou voulez ajouter quoi que ce soit (exercices, explications, etc.), vous pouvez vous diriger sur le canal slack `42lehavre_random` ou bien contacter directement [cpothin](https://profile.intra.42.fr/users/cpothin) ou un membre du BDE.
 
 Dans l'ideal, ce projet s'enrichira avec votre collaboration et vos suggestions.
 
