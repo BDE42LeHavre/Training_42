@@ -3,7 +3,7 @@ Voici quelques exercices et informations principalement destines aux etudiants d
 Cela devrait permettre de mieux comprendre le fonctionnement de certains points importants en programmation.
 
 
-<h1>Consignes</h1>
+<h2>Consignes</h2>
 
 Les exercices sont a compiler avec la commande `gcc -Wall -Wextra -Werror` et ne sont pas sujets a des corrections automatisees/en ligne simplement parce qu'ils ne sont pas faits pour vous noter.
 
@@ -20,12 +20,14 @@ Lorsque la consigne demande de `rajouter` quelque chose, vous ne devez rien ajou
 N'hesitez pas a lancer les programmes afin de voir leur resultat avant d'ajouter quoi que ce soit, si vous le voulez.
 
 
-<h1>Le mot de la fin</h1>
+<h2>Le mot de la fin</h2>
 
-Si vous voyez des erreurs ou voulez ajouter quoi que ce soit (exercices, explications, etc.), vous pouvez vous diriger sur le canal slack `42lehavre_random` ou bien me contacter directement ([cpothin](https://profile.intra.42.fr/users/cpothin)).
+Si vous voyez des erreurs ou voulez ajouter quoi que ce soit (exercices, explications, etc.), vous pouvez vous diriger sur le canal slack `42lehavre_random` ou bien contacter directement [cpothin](https://profile.intra.42.fr/users/cpothin) ou des membres du BDE.
 
-Dans l'ideal, ce projet s'enrichira avec votre collaboration.
+Dans l'ideal, ce projet s'enrichira avec votre collaboration et vos suggestions.
+
 Le but est que chacun y trouve son compte et puisse s'ameliorer.
+
 Avec un peu de chance ca pourrait meme servir aux etudiants suivants.
 
-Il n'y a pas de question bete, avant de savoir quelque chose, on ne sait pas.
+Il n'y a pas de question bete. Avant de savoir quelque chose, on ne sait pas. Donc n'hesitez pas a venir nous voir si vous avez une question.
