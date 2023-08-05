@@ -5,7 +5,6 @@ Vous pouvez voir un struct comme une boite contenant des variables.
 Nous pouvons meme faire un carnet d'adresses comme ce que nous avons sur nos telephones.
 
 <img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/struct_contact.jpg width=256>
-<img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/struct_contact.jpg width=256>
 
 Dans notre `main`, nous pouvons creer une variable `struct s_contact	contact;`. A l'interieur, nous pouvons mettre les valeurs souhaitees aux variables contenues dans ce struct.
 
@@ -33,7 +32,6 @@ Dans notre `main`, nous pouvons creer une variable `struct s_contact	contact;`. 
 Le resultat sera :
 
 ![](https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/output_struct.png)
-![](https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/output_struct.png)
 
 Pour acceder a une variable dans un struct, nous devons donc ecrire le nom que nous avons donne au struct, puis mettre un point `.` pour l'ouvrir, puis ecrire le nom de la variable contenue dans ce struct. Ce qui donne `contact.nom` pour la variable `nom`.
 
@@ -57,7 +55,6 @@ Puis nous nous faisons un `malloc` quand on sait quelle taille on veut lui donne
 
 Un tableau de `struct s_contact` peut etre represente ainsi :
 
-<img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/struct_array.jpg width=512>
 <img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/struct_array.jpg width=512>
 
 Acceder au contenu de ce tableau se fera de facon identique dans les deux cas, c'est-a-dire avec `contacts[nbr]`.
@@ -85,7 +82,6 @@ Acceder au contenu de ce tableau se fera de facon identique dans les deux cas, c
 
 Le resultat sera :
 
-![](https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/output_struct_array.png)
 ![](https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/output_struct_array.png)
 
 Nous avons donc affiche le `nom` du `contact[0]`, le `prenom` du `contact[1]` et le `numero` du `contact[2]`.
