@@ -59,11 +59,11 @@ De plus, nous avons mis le `.next` du dernier element de la liste a `NULL`, ce q
 
 Lors de l'execution du programme, le terminal affichera :
 
-<img src= output_linked_list>
+<img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/output_linked_list.png>
 
 Visuellement, la liste chainee donne quelque chose du genre :
 
-<img src= linked_list width=512>
+<img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/linked_list.jpg width=512>
 
 <h2>Iteration :</h2>
 
@@ -75,11 +75,11 @@ Lorsque l'on veut iterer a travers une liste chainee, on met le pointeur de la l
 
 Au debut, le pointeur est place comme ceci :
 
-<img src=  first_linked_list width=512>
+<img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/first_linked_list.jpg width=512>
 
 Mais une fois le pointeur place sur l'element suivant, on perd l'adresse du premier element de la liste :
 
-<img src=  second_linked_list width=512>
+<img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/second_linked_list.jpg width=512>
 
 Il nous faut donc enregistrer le pointeur de ce debut de liste. Pour cela nous pouvons ecrire (nous passons `contacts` dans une autre fonction, parce qu'on ne fait pas tout dans le `main`, hein !) :
 
