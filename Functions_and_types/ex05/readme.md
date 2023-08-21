@@ -1,4 +1,4 @@
-Completez la ligne `while ( != 42)` dans la fonction `main`.
+Completez la ligne `while ( != 42)` dans la fonction `main(void)`.
 
 Le terminal devra afficher :
 

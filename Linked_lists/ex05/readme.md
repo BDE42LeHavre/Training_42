@@ -1,4 +1,5 @@
-Completez la fonction `main`.
+Completez la fonction `main(void)`.
 
 Le terminal devra afficher :
-`3`
+
+	3

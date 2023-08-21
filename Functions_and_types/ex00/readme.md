@@ -1,4 +1,4 @@
-Ajoutez une seule ligne dans la fonction `int type(void);` afin que le programme puisse se compiler.
+Ajoutez une seule ligne dans la fonction `int type(void)` afin que le programme puisse se compiler.
 
 Le terminal devra afficher :
 

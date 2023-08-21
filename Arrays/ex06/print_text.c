@@ -1,6 +1,7 @@
 /*
-    Faites en sorte d'afficher "world" dans le terminal.
-    Ne modifiez aucune ligne de code deja presente, ajoutez-en seulement !
+    Completez la fonction `main(void)`.
+    Le terminal devra afficher :
+        world
 */
 
 #include <stdio.h>

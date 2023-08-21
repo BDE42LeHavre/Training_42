@@ -1,4 +1,4 @@
-Completez la fonction `main` afin que le programme se lance sans erreur.
+Completez la fonction `main(void)` afin que le programme se lance sans erreur.
 
 Le terminal devra afficher :
 

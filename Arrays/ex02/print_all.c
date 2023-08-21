@@ -1,5 +1,5 @@
 /*
-    Completez la fonction qui imprime la totalite des valeurs du tableau passe en parametre.
+    Completez la fonction `print_tab(int tab[])`.
     Le terminal devra afficher :
         1
         2

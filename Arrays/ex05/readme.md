@@ -1,4 +1,4 @@
-Completez la fonction main afin que le terminal affiche :
+Completez la fonction `main(void)` afin que le terminal affiche :
 
     1
     2

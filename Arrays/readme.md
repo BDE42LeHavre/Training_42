@@ -6,7 +6,7 @@ Nous pouvons meme faire un carnet d'adresses comme ce que nous avons sur nos tel
 
 <img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/struct_contact.jpg width=256>
 
-Dans notre `main`, nous pouvons creer une variable `struct s_contact	contact;`. A l'interieur, nous pouvons mettre les valeurs souhaitees aux variables contenues dans ce struct.
+Dans notre `main()`, nous pouvons creer une variable `struct s_contact	contact;`. A l'interieur, nous pouvons mettre les valeurs souhaitees aux variables contenues dans ce struct.
 
 	#include <stdio.h>
 
@@ -49,7 +49,7 @@ Si nous ne le savons pas tout de suite, nous allons simplement ecrire :
 
 	struct s_contact	*contacts;
 
-Puis nous nous faisons un `malloc` quand on sait quelle taille on veut lui donner :
+Puis nous nous faisons un `malloc()` quand on sait quelle taille on veut lui donner :
 
 	contacts = (struct s_contact *)malloc(sizeof(struct s_contact) * nbr);
 

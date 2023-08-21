@@ -1,4 +1,4 @@
-Completez la fonction `main` en ajoutant une seule ligne.
+Completez la fonction `main(void)` en ajoutant une seule ligne.
 
 Le terminal devra afficher :
 

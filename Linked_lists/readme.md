@@ -81,7 +81,7 @@ Mais une fois le pointeur place sur l'element suivant, on perd l'adresse du prem
 
 <img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/second_linked_list.jpg width=512>
 
-Il nous faut donc enregistrer le pointeur de ce debut de liste. Pour cela nous pouvons ecrire (nous passons `contacts` dans une autre fonction, parce qu'on ne fait pas tout dans le `main`, hein !) :
+Il nous faut donc enregistrer le pointeur de ce debut de liste. Pour cela nous pouvons ecrire (nous passons `contacts` dans une autre fonction, parce qu'on ne fait pas tout dans le `main()`, hein !) :
 
 	void	function(t_contact	*contacts)
 	{

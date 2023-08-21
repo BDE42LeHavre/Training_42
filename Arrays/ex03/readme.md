@@ -1,4 +1,4 @@
-Completez la fonction do_something.
+Completez la fonction `do_something(int *tab)`.
 
 Le terminal devra afficher :
 
