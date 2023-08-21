@@ -10,7 +10,7 @@ Il est preferable de preciser la taille du type de variable qu'on utilise via `s
 
 	char *str = malloc(sizeof(char) * 5);
 
-<img src=char_array_size width=512>
+<img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/char_array_size.jpg width=512>
 
 Dans le cas ou on a `void *nbr` au lieu de `int *nbr`, nous allons devoir preciser le type de retour de la fonction `malloc()` avec un **cast**, comme suit :
 
@@ -18,7 +18,7 @@ Dans le cas ou on a `void *nbr` au lieu de `int *nbr`, nous allons devoir precis
 
 Cela permettra donc de demander une allocation de memoire d'une taille de 3 * 4 **bytes**, puisqu'un `int` fait 4 **bytes**.
 
-<img src=bytes width=512>
+<img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/char_int_size.jpg width=512>
 
 Demander l'allocation d'une zone de memoire est une chose, mais la reussir en est une autre !
 
