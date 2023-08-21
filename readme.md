@@ -2,6 +2,8 @@ Voici quelques exercices et informations principalement destines aux etudiants d
 
 Cela devrait permettre de mieux comprendre le fonctionnement de certains points importants en programmation.
 
+Le code present dans les exercices est avant tout fait pour vous montrer qu'il existe une ou plusieurs facons d'obtenir certains resultats. Ce projet n'est pas un guide de bonnes pratiques !
+
 
 <h2>Consignes</h2>
 
