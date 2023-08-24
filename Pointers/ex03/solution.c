@@ -15,5 +15,5 @@ int main(void)
 
 /*
     Il nous faudra passer les adresses des variables `c` et `nbr` en arguments
-    de la fonction `journey` et indiquer les pointeurs en parametres dans le meme ordre.
+    de la fonction `journey()` et indiquer les pointeurs en parametres dans le meme ordre.
 */

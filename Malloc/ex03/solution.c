@@ -14,5 +14,5 @@ int	main(void)
 
 /*
 	`tab` est un tableau de type `int`.
-	Il faut donc que le `malloc` soit de ce type, car un `int` fait 4 bits et non 1 bit (pour le `char`)
+	Il faut donc que le `malloc()` soit de ce type, car un `int` fait 4 bytes et non 1 (pour le `char`)
 */

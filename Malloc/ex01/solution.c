@@ -37,7 +37,7 @@ int	main(void)
 }
 
 /*
-	Le `free` se trouvait apres la ligne `return (0);`, ce qui resultait en un `leak`.
+	Le `free()` se trouvait apres la ligne `return (0);`, ce qui resultait en un `leak`.
 	Il fallait donc le mettre avant le `return`.
-	Chaque `malloc` doit etre `free` !
+	Chaque `malloc()` doit etre `free()` !
 */

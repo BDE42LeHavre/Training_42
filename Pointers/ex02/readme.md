@@ -1,4 +1,4 @@
-Completez l'appel de la fonction `journey(char *passenger)` dans la fonction `main(void)` afin de passer `c` en argument.
+Corrigez les lignes `int p = ;` et `journey();` afin de passer `c` en argument.
 
 Le terminal devra afficher :
 

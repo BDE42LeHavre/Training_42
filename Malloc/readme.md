@@ -4,7 +4,7 @@
 
 Il y a un seul parametre a entrer lors de l'appel de cette fonction, c'est la taille de la zone memoire demandee.
 
-Ainsi, `char *str = malloc(5);` demandera au systeme d'allouer **5 bytes** pour la variable `str`.
+Ainsi, `char *str = malloc(5);` demandera au systeme d'allouer 5 **bytes** pour la variable `str`.
 
 Il est preferable de preciser la taille du type de variable qu'on utilise via `sizeof()`, comme suit :
 

@@ -43,6 +43,6 @@ int	main(void)
 }
 
 /*
-	Tout `malloc` doit avoir son `free`.
-	Faites attention aux conditions de sortie qui peuvent demander de faire un `free` autre part.
+	Tout `malloc()` doit avoir son `free()`.
+	Faites attention aux conditions de sortie qui peuvent demander de faire un `free()` autre part.
 */

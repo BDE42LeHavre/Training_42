@@ -34,6 +34,6 @@ int	main(void)
 }
 
 /*
-	Un `char` fait 1 bit, un `int` en fait 4. 
+	Un `char` fait 1 byte, un `int` en fait 4. 
 	Chaque type a sa taille.
 */

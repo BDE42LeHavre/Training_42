@@ -1,20 +1,26 @@
-#include <stdio.h>
+#include <unistd.h>
 
-void    journey(char *passenger)
+void    journey(char* passenger)
 {
-    printf("%c\n", *passenger);
+    int p = *passenger;
+    
+    write(1, &p, 1);
+    write(1, "\n", 1);
 }
 
 int main(void)
 {
-    int c = 112;
+    char c = 112;
 
-    journey((char *)&c);
+    journey(&c);
 }
 
 /*
-    Pour pouvoir envoyer un `int` dans une fonction qui demande un `char *` en parametre,
-    il faut faire un cast, c'est-a-dire convertir le type de la variable en un autre.
-    Donc nous convertissons le type de variable a passer et nous precisons que nous passons
-    l'adresse de cette variable, via le `&`.
+    La fonction `journey()` prend en parametre un pointeur sur `char`. Il faut donc appeler cette
+    fonction en ecrivant `journey(&c)`.
+    Ensuite, pour pouvoir ecrire `p` dans le terminal, il faut que la variable `p` ait la valeur
+    du `char` pointe par `passenger`.
+    Il faut donc ecrire `int p = *passenger;`.
+    Traduisez par :
+        La valeur de `p` est egale a la valeur pointee par `passenger`.
 */

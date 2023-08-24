@@ -36,8 +36,9 @@ int	main(void)
 	nous n'avons pas a le faire. Mais nous pourrions ecrire `(struct s_truct *)malloc(8);` a la place.
 
 	Pourquoi 8 au lieu de 5 (int = 4, char = 1) ?
-	Parce que le compileur aligne les allocations de memoire afin que le systeme puisse y acceder plus rapidement.
-	Il passe donc les 3 autres bits que n'utilise pas le `char`.
+	Parce que le compileur aligne les allocations de memoire afin que le systeme puisse y acceder
+	plus rapidement.
+	Il passe donc les 3 autres bytes que n'utilise pas le `char`.
 	Cet article (en anglais) en parle : 
 		https://www.geeksforgeeks.org/structure-member-alignment-padding-and-data-packing/
 */

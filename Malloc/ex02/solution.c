@@ -30,10 +30,10 @@ int	main(void)
 }
 
 /*
-	La boucle `while (++i < 9)` dans la fonction `main` appelle la fonction `search_key` qui va verifier
+	La boucle `while (++i < 9)` dans la fonction `main()` appelle la fonction `search_key` qui va verifier
 	la valeur decimalede chaque caractere de la chaine `key`.
 	Lorsque la valeur `0` (equivalente a `\0`) est rencontree, on sort du programme via `return (0)`.
-	Puisque la chaine de caracteres `key` a recu de la memoire via `malloc`, nous devons liberer cette memoire
-	avant de sortir du programme.
+	Puisque la chaine de caracteres `key` a recu de la memoire via `malloc()`, nous devons liberer
+	cette memoire avant de sortir du programme.
 	Il faut donc ecrire `free(str);` lorsque cette condition de sortie est rencontree.
 */
