@@ -34,5 +34,7 @@ int main(void)
     Cela se lit : 
         La valeur de la variable `c` est egale a la premiere valeur pointee par `str`.
 
-    
+    Pour `char *str = "Bonjour"`, `*str` est egal a `B`, `*(str + 1)` est egal a `o`
+    et `*(str + 2)` est egal a `n`.
+    C'est comme ecrire `str[0]`, `str[1]` et `str[2]`.
 */

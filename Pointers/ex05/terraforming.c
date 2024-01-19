@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 
-void    terraformer(int *i)
+void    terraform(int *i)
 {
     static int terraformer = 0;
 
@@ -23,5 +23,5 @@ int main(void)
 {
     int *tab;
 
-    terraformer(tab);
+    terraform(tab);
 }
