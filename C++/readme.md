@@ -24,13 +24,13 @@ Les structs ont leurs membres en `public` par defaut, tandis que les classes ont
 
 C'est pour cela qu'il est important de definir precisement le type d'acces aux membres.
 
+A l'interieur du coffre, il y a des pieces <span style="color:teal;">(en prive)</span>, des fonctions et un sac <span style="color:teal;">(en public)</span> :
+
 <img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/chest.png width=512>
 
-Dans le coffre, nous avons un sac.
+Et dans ce sac, nous avons des pieces :
 
 <img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/gold_sack.png width=256>
-
-Et dans ce sac, nous avons des pieces.
 
 ```C++
 	class MyClass
@@ -45,9 +45,6 @@ Et dans ce sac, nous avons des pieces.
 Nous avons ici une classe qui s'appelle MyClass et qui contient une variable membre `int` en prive et une fonction membre `void DoStuff()` en public.
 
 Nous ne pouvons pas acceder a une variable ou a une fonction membre definie en <span style="color:teal;">prive</span> hors de cette classe.
-
-
-Dans ce sac, il y a des pieces.
 
 ```C++
 	class Chest
@@ -70,7 +67,7 @@ Dans ce sac, il y a des pieces.
 
 En theorie, le texte affiche sur le terminal devrait indiquer le nombre de pieces que contient le coffre.
 
-En pratique, etant donne que l'variable membre `goldInChest` est en <span style="color:teal;">prive</span>, il n'est <span style="color:teal;">pas accessible</span> dans le `main()` ni a aucun autre endroit en dehors de la classe.
+En pratique, etant donne que la variable membre `goldInChest` est en <span style="color:teal;">prive</span>, elle n'est <span style="color:teal;">pas accessible</span> dans le `main()` ni a aucun autre endroit en dehors de la classe.
 
 C'est une bonne facon d'empecher la modification d'une variable dans un autre fichier ou une autre fonction.
 
@@ -109,7 +106,7 @@ Ce gardien va etre l'intermediaire entre l'interieur et l'exterieur de la classe
 
 <img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/illustration_cpp.jpg width=512>
 
-Pour pouvoir recuperer la valeur de l'variable membre `int goldInChest`, nous pouvons faire un `Getter()`:
+Pour pouvoir recuperer la valeur de la variable `int goldInChest`, nous pouvons faire un `Getter()`:
 
 ```C++
 	class Chest
@@ -122,7 +119,7 @@ Pour pouvoir recuperer la valeur de l'variable membre `int goldInChest`, nous po
 	};
 ```
 
-Le `Getter()` est une fonction membre qui va permettre d'<span style="color:teal;">acceder publiquement</span> a la valeur d'un <span style="color:teal;">variable membre prive</span> sans aucune possibilite de la modifier.
+Le `Getter()` est une fonction membre qui va permettre d'<span style="color:teal;">acceder publiquement</span> a la valeur d'une <span style="color:teal;">variable membre privee</span> sans aucune possibilite de la modifier.
 
 > [!TIP]
 > A noter que :
@@ -139,7 +136,7 @@ Le `Getter()` est une fonction membre qui va permettre d'<span style="color:teal
 
 Appeler un `Getter()`, c'est demander au gardien du coffre de vous dire combien celui-ci contient de pieces.
 
-Il existe aussi le `Setter()`, qui va permettre de donner a cet variable membre prive une valeur choisie.
+Il existe aussi le `Setter()`, qui va permettre de donner a cette variable privee une valeur choisie.
 
 ```C++
 	class Chest
