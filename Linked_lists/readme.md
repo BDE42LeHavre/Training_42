@@ -4,6 +4,7 @@ Une linked list est une liste composee d'elements attaches entre eux par un poin
 
 Ainsi, si nous ecrivons :
 
+```C
 	typedef struct	s_contact
 	{
 		int					data;
@@ -20,11 +21,13 @@ Ainsi, si nous ecrivons :
 		contact2.data = 2;
 		contact3.data = 3;
 	}
+```
 
 Ca ne suffit pas, il n'y a aucun element attache.
 
 Il faut donc attacher les elements ensemble avec la variable `struct s_contact	*next;`.
 
+```C
 	#include <stdlib.h>
 	#include <stdio.h>
 
@@ -50,6 +53,7 @@ Il faut donc attacher les elements ensemble avec la variable `struct s_contact	*
 
 		printf("%d\n", contact1.next->data);
 	}
+```
 
 Le `contact2` est bien attache a `contact1.next` et `contact3` est attache a `contact2.next`. 
 
@@ -69,9 +73,11 @@ Visuellement, la liste chainee donne quelque chose du genre :
 
 Lorsque l'on veut iterer a travers une liste chainee, on met le pointeur de la liste sur l'element suivant, comme ceci :
 
+```C
 	t_contact	*contacts;
 
 	contacts = contacts->next;
+```
 
 Au debut, le pointeur est place comme ceci :
 
@@ -83,6 +89,7 @@ Mais une fois le pointeur place sur l'element suivant, on perd l'adresse du prem
 
 Il nous faut donc enregistrer le pointeur de ce debut de liste. Pour cela nous pouvons ecrire (nous passons `contacts` dans une autre fonction, parce qu'on ne fait pas tout dans le `main()`, hein !) :
 
+```C
 	void	function(t_contact	*contacts)
 	{
 		t_contact	*head;
@@ -95,5 +102,6 @@ Il nous faut donc enregistrer le pointeur de ce debut de liste. Pour cela nous p
 			head = head->next;
 		}
 	}
+```
 
 Nous pouvons a present iterer a travers la liste sans perdre le debut de celle-ci.
