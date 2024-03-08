@@ -24,11 +24,11 @@ Les structs ont leurs membres en `public` par defaut, tandis que les classes ont
 
 C'est pour cela qu'il est important de definir precisement le type d'acces aux membres.
 
-<img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/gold_sack.png width=256>
+<img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/chest.png width=512>
 
 Dans le coffre, nous avons un sac.
 
-<img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/chest.png width=512>
+<img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/gold_sack.png width=256>
 
 Et dans ce sac, nous avons des pieces.
 
