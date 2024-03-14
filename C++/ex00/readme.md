@@ -2,9 +2,9 @@
 
 Dans la classe `Weapon`, nous avons un constructeur `Weapon();` ainsi qu'un destructeur `~Weapon();`.
 
-Ces methodes sont <span style="color:teal;">automatiquement appelees</span> lors de la construction et la destruction de l'objet.
+Ces fonctions membres sont <span style="color:teal;">automatiquement appelees</span> lors de la construction et la destruction de l'objet.
 
-Elles fonctionnent comme n'importe quelles methodes, sauf qu'elles ne renvoient rien.
+Elles fonctionnent comme n'importe quelles fonctions, sauf qu'elles ne renvoient rien.
 
 Au contraire des constructeurs, les destructeurs ne peuvent pas avoir de surcharge.
 
@@ -34,10 +34,6 @@ Weapon::Weapon(int newDamages)
 	this->damages = newDamages;
 }
 
-// a noter qu'on peut aussi ecrire :
-
-Weapon::Weapon(int newDamages) : damages(newDamages) {}
-
 ```
 
 Vous pouvez creer un objet `Weapon` de plusieurs facons:
@@ -52,4 +48,4 @@ int main()
 
 Ici, l'objet `sword` sera initialise sans aucune configuration.
 
-L'objet `axe`, en revanche, sera initialise avec l'attribut `damages = 10`; 
+L'objet `axe`, en revanche, sera initialise avec la variable membre `damages = 10`; 

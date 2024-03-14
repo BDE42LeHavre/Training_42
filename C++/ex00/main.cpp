@@ -5,7 +5,7 @@
 		Damages: 10
 */
 
-#include "MyFirstClass.hpp"
+#include "Weapon.hpp"
 
 int main()
 {

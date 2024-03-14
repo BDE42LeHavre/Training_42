@@ -1,4 +1,4 @@
-#include "MyFirstClass.hpp"
+#include "Weapon.hpp"
 
 int main()
 {
@@ -8,7 +8,7 @@ int main()
 }
 
 /*
-	En regardant le fichier MyFirstClass.hpp,
+	En regardant le fichier Weapon.hpp,
 	vous pouvez voir que la methode `showStats()` de la classe `Weapon` est en `public`.
 	Vous pouvez donc l'appeler dans le `main()`.
 	Le contenu de cette methode affiche le texte demande sur `std::cout`, qui represente la sortie standard.
