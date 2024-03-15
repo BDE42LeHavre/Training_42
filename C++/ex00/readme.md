@@ -36,6 +36,10 @@ Weapon::Weapon(int newDamages)
 
 ```
 
+Vous pouvez noter qu'il y a `Weapon::` devant la fonction `Weapon()`.
+
+Cela signifie que la fonction `Weapon()` fait partie de la classe `Weapon`. Il s'agit d'une sorte de hierarchie.
+
 Vous pouvez creer un objet `Weapon` de plusieurs facons:
 
 ```C++

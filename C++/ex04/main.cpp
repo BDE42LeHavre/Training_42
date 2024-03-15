@@ -1,7 +1,8 @@
 /*
-	Faites en sorte que l'attaque et la defense fonctionnent correctement.
-	La defense divise par deux les degats recus par l'arme de l'adversaire.
-	Faites aussi en sorte que la defense fonctionne correctement.
+	Ce gobelin fait bien trop de degats ! 
+	Faites en sorte que l'ennemi soit de classe `Goblin` au lieu de `Character`.
+	Le gobelin sera bien plus faible qu'un ennemi standard et le joueur
+	sera capable de gagner le combat sans modifier l'arme qu'il porte.
 */
 
 #include "GameManager.hpp"

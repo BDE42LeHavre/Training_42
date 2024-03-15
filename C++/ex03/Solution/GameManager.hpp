@@ -20,7 +20,7 @@ class GameManager
 		void InitCharacters();
 		void StartFight();
 		void NewTurn();
-		void AskInput();
+		void GameLoop();
 		std::string Attack(Character &from, Character &to);
 		std::string Defend(Character &character);
 		std::string EnemyAttack();

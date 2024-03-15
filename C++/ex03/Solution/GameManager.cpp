@@ -18,17 +18,6 @@ int getRandomNbr(int min, int max)
 	return randomNumber;
 }
 
-void GameManager::InitCharacters()
-{
-	this->player = new Character("Player", 100, Weapon("Sword", 10));
-	this->enemy = new Character("Goblin", 100, Weapon("Axe", 35));
-	this->gameEnded = false;
-}
-void GameManager::StartFight()
-{
-	this->turnNbr = 0;
-	std::cout << GOLD << "Starting a fight between the Player and a Goblin!" << RESET << std::endl;
-}
 //	Si une touche est pressee, on la stocke dans la variable `char c`
 //	et on la retourne si la lecture du terminal a reussi.
 char getKeyPressed()
@@ -39,12 +28,38 @@ char getKeyPressed()
     return '\0';
 }
 
+//	On attend que l'utilisateur presse la touche `Entree`.
+void WaitEnterPressed()
+{
+	while (true)
+	{
+		char c = getKeyPressed();
+		if (c == '\n') // on detecte un retour a la ligne, donc la touche entree
+			break;
+		usleep(10000);
+	}	
+}
+
+void GameManager::InitCharacters()
+{
+	this->player = new Character("Player", 100, Weapon("Sword", 10));
+	this->enemy = new Character("Goblin", 100, Weapon("Axe", 35));
+	this->gameEnded = false;
+}
+
+void GameManager::StartFight()
+{
+	this->turnNbr = 0;
+	std::cout << std::endl << GOLD << "Starting a fight between the Player and a Goblin!" << RESET << std::endl;
+	WaitEnterPressed();
+}
+
 //	Quelques stats. On renvoie un `std::string` pour les afficher plus tard dans un ordre precis.
 std::string GameManager::GetStatsStream()
 {
 	std::stringstream statsStream;
 	statsStream << TEAL << "Turn " << this->turnNbr << RESET << std::endl << std::endl;
-	statsStream <<"Player's HP:\t" << this->player->getHealthPoints() << std::endl;
+	statsStream << "Player's HP:\t" << this->player->getHealthPoints() << std::endl;
 	statsStream << "Enemy's HP:\t" << this->enemy->getHealthPoints() << std::endl << std::endl;
 	return statsStream.str();
 }
@@ -63,9 +78,9 @@ std::string GameManager::GetMenuStream()
 //	Cette fonction est une amelioration de celle de l'exercice precedent.
 //	La detection des touches est continue avec le `while`, nous mettons donc un `usleep(10000)`
 //	afin de ne pas faire trop de calculs inutiles.
-void GameManager::AskInput()
+void GameManager::GameLoop()
 {
-	system("clear");
+	system("clear"); // on vide le texte contenu dans le terminal
 	std::stringstream choiceStream;
 	std::cout << GetStatsStream() << GetMenuStream() << std::endl;
 	while (true)
@@ -89,7 +104,7 @@ void GameManager::AskInput()
 		usleep(10000);
 	}
 	choiceStream << EnemyAttack();
-	system("clear"); // on vide le texte contenu dans le terminal
+	system("clear");
 	std::cout << GetStatsStream() << GetMenuStream() << choiceStream.str() << std::endl;
 	if (this->gameEnded)
 		return ;
@@ -124,7 +139,9 @@ std::string GameManager::Attack(Character &from, Character &to)
 {
 	std::stringstream attackStream;
 	from.Attack(to);
-	attackStream << from.getName() << " inflicts " << RED << from.getWeapon().getDamages() << RESET << " damages to " << to.getName() << " with its " << from.getWeapon().getName() << "!" << std::endl;
+	attackStream << from.getName() << " inflicts " << RED << from.getWeapon().getDamages()
+		<< RESET << " damages to " << to.getName() << " with his "
+		<< from.getWeapon().getName() << "!" << std::endl;
 	if (to.getHealthPoints() <= 0)
 		attackStream << EndFight(from);
 	return attackStream.str();
@@ -145,7 +162,7 @@ void GameManager::NewTurn()
 	this->player->setDefend(false);
 	this->enemy->setDefend(false);
 	this->turnNbr++;
-	AskInput();
+	GameLoop();
 }
 
 std::string GameManager::EndFight(Character &character)

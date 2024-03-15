@@ -2,11 +2,13 @@
 # define GAMEMANAGER_HPP 
 
 # include "Character.hpp"
+# include "Goblin.hpp"
 # include "Colors.hpp"
 # include <cstdlib>
 # include <ctime>
 # include <termios.h>
 # include <unistd.h>
+
 
 class GameManager
 {
@@ -20,8 +22,8 @@ class GameManager
 		void StartFight();
 		void NewTurn();
 		void GameLoop();
-		std::string Attack(Character &from, Character to);
-		std::string Defend(Character character);
+		std::string Attack(Character &from, Character &to);
+		std::string Defend(Character &character);
 		std::string EnemyAttack();
 		std::string EndFight(Character &character);
 		std::string GetStatsStream();

@@ -32,10 +32,9 @@ void WaitEnterPressed()
 void GameManager::InitCharacters()
 {
 	this->player = new Character("Player", 100, Weapon("Sword", 10));
-	this->enemy = new Character("Goblin", 100, Weapon("Axe", 35));
+	this->enemy = new Goblin(100, Weapon("Axe", 35));
 	this->gameEnded = false;
 }
-
 void GameManager::StartFight()
 {
 	this->turnNbr = 0;
@@ -64,7 +63,6 @@ std::string GameManager::GetMenuStream()
 	return menuStream.str();
 }
 
-//	Cette fonction est une amelioration de celle de l'exercice precedent.
 //	La detection des touches est continue avec le `while`, nous mettons donc un `usleep(10000)`
 //	afin de ne pas faire trop de calculs inutiles.
 void GameManager::GameLoop()
@@ -104,7 +102,7 @@ std::string GameManager::EnemyAttack()
 {
 	std::stringstream enemyStream;
 	if (this->gameEnded)
-		return NULL;
+		return "";
 	if (getRandomNbr(1, 3) == 1)
 	{
 		this->enemy->setDefend(true);
@@ -117,7 +115,7 @@ std::string GameManager::EnemyAttack()
 	return enemyStream.str();
 }
 
-std::string GameManager::Attack(Character &from, Character to)
+std::string GameManager::Attack(Character &from, Character &to)
 {
 	std::stringstream attackStream;
 	from.Attack(to);
@@ -129,7 +127,7 @@ std::string GameManager::Attack(Character &from, Character to)
 	return attackStream.str();
 }
 
-std::string GameManager::Defend(Character character)
+std::string GameManager::Defend(Character &character)
 {
 	std::stringstream defendStream;
 	character.setDefend(true);
