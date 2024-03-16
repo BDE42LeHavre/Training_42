@@ -184,7 +184,7 @@ Appeler un `Setter()`, c'est un peu comme donner des pieces au gardien du coffre
 
 ## Heritage
 
-<img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/heritage.jpg width=512>
+<img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/heritage.png width=512>
 
 Si vous voulez creer plusieurs classes qui ont des choses en commun tout en leur donnant des comportements differents, l'heritage est un bon moyen d'y arriver !
 
