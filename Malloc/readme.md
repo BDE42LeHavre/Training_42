@@ -1,3 +1,5 @@
+<a name="readme-top"></a>
+
 <h2>Malloc ?</h2>
 
 `malloc()` est une fonction qui va tenter d'allouer de la memoire sur le **tas**, ou **heap** de maniere dynamique. 
@@ -59,3 +61,9 @@ if (!str)
 
 free(str);
 ```
+
+<div align="right">
+
+[![Back to Top](https://img.shields.io/badge/Back_to_Top-%E2%86%91-1abc9c.svg)](#readme-top)
+
+</div>

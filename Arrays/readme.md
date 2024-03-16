@@ -98,6 +98,6 @@ Nous avons donc affiche le `nom` du `contact[0]`, le `prenom` du `contact[1]` et
 
 <div align="right">
 
-[![][back-to-top]](#readme-top)
+[![Back to Top](https://img.shields.io/badge/Back_to_Top-%E2%86%91-1abc9c.svg)](#readme-top)
 
 </div>

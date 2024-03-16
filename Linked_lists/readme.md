@@ -73,7 +73,7 @@ Visuellement, la liste chainee donne quelque chose du genre :
 
 <div align="right">
 
-[![][back-to-top]](#readme-top)
+[![Back to Top](https://img.shields.io/badge/Back_to_Top-%E2%86%91-1abc9c.svg)](#readme-top)
 
 </div>
 
@@ -116,6 +116,6 @@ Nous pouvons a present iterer a travers la liste sans perdre le debut de celle-c
 
 <div align="right">
 
-[![][back-to-top]](#readme-top)
+[![Back to Top](https://img.shields.io/badge/Back_to_Top-%E2%86%91-1abc9c.svg)](#readme-top)
 
 </div>

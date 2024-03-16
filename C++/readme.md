@@ -24,7 +24,7 @@ Les consignes seront uniquement dans les fichiers `main.cpp`.
 
 <div align="right">
 
-[![][back-to-top]](#readme-top)
+[![Back to Top](https://img.shields.io/badge/Back_to_Top-%E2%86%91-1abc9c.svg)](#readme-top)
 
 </div>
 
@@ -115,7 +115,7 @@ Une bonne pratique est de nommer les variables membres avec un `_` devant, par e
 
 <div align="right">
 
-[![][back-to-top]](#readme-top)
+[![Back to Top](https://img.shields.io/badge/Back_to_Top-%E2%86%91-1abc9c.svg)](#readme-top)
 
 </div>
 
@@ -178,7 +178,7 @@ Appeler un `Setter()`, c'est un peu comme donner des pieces au gardien du coffre
 
 <div align="right">
 
-[![][back-to-top]](#readme-top)
+[![Back to Top](https://img.shields.io/badge/Back_to_Top-%E2%86%91-1abc9c.svg)](#readme-top)
 
 </div>
 
@@ -281,6 +281,6 @@ En revanche, vous pouvez toujours instancier la classe `Car`.
 
 <div align="right">
 
-[![][back-to-top]](#readme-top)
+[![Back to Top](https://img.shields.io/badge/Back_to_Top-%E2%86%91-1abc9c.svg)](#readme-top)
 
 </div>
