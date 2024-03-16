@@ -1,3 +1,5 @@
+<a name="readme-top"></a>
+
 <h2>Petites explications sur les structures. </h2>
 
 Vous pouvez voir un struct comme une boite contenant des variables.
@@ -9,26 +11,26 @@ Nous pouvons meme faire un carnet d'adresses comme ce que nous avons sur nos tel
 Dans notre `main()`, nous pouvons creer une variable `struct s_contact	contact;`. A l'interieur, nous pouvons mettre les valeurs souhaitees aux variables contenues dans ce struct.
 
 ```C
-	#include <stdio.h>
+#include <stdio.h>
 
-	struct s_contact
-	{
-		char			*nom;
-		char			*prenom;
-		unsigned int	numero;
-	};
+struct s_contact
+{
+	char			*nom;
+	char			*prenom;
+	unsigned int	numero;
+};
 
-	int		main(void)
-	{
-		struct s_contact	contact;
+int		main(void)
+{
+	struct s_contact	contact;
 
-		contact.nom = "Celere";
-		contact.prenom = "Jacques";
-		contact.numero = 1234567890;
+	contact.nom = "Celere";
+	contact.prenom = "Jacques";
+	contact.numero = 1234567890;
 
-		printf("Nom :\t\t%s\nPrenom :\t%s\nNumero :\t%u\n",
-				contact.nom, contact.prenom, contact.numero);
-	}
+	printf("Nom :\t\t%s\nPrenom :\t%s\nNumero :\t%u\n",
+			contact.nom, contact.prenom, contact.numero);
+}
 ```
 
 Le resultat sera :
@@ -44,7 +46,7 @@ Pour un tableau de structs, c'est le meme principe que pour n'importe quel table
 On ecrit :
 
 ```C
-	struct s_contact	contacts[nbr];
+struct s_contact	contacts[nbr];
 ```
 
 Cette facon d'ecrire est correcte si nous savons a l'avance le nombre d'elements que contiendra ce tableau.
@@ -52,7 +54,7 @@ Cette facon d'ecrire est correcte si nous savons a l'avance le nombre d'elements
 Si nous ne le savons pas tout de suite, nous allons simplement ecrire :
 
 ```C
-	struct s_contact	*contacts;
+struct s_contact	*contacts;
 ```
 
 Puis nous nous faisons un `malloc()` quand on sait quelle taille on veut lui donner :
@@ -66,26 +68,26 @@ Un tableau de `struct s_contact` peut etre represente ainsi :
 Acceder au contenu de ce tableau se fera de facon identique dans les deux cas, c'est-a-dire avec `contacts[nbr]`.
 
 ```C
-	#include <stdio.h>
+#include <stdio.h>
 
-	struct s_contact
-	{
-		char			*nom;
-		char			*prenom;
-		unsigned int	numero;
+struct s_contact
+{
+	char			*nom;
+	char			*prenom;
+	unsigned int	numero;
+};
+
+int		main(void)
+{
+	struct s_contact	contacts[3] = {
+	[0] = { .nom = "Celere", .prenom = "Jacques", .numero = 1234567890 },
+	[1] = { .nom = "Ouye", .prenom = "Jacques", .numero = 1111111111 },
+	[2] = { .nom = "Aite", .prenom = "Jacques", .numero = 4242424242 }
 	};
 
-	int		main(void)
-	{
-		struct s_contact	contacts[3] = {
-		[0] = { .nom = "Celere", .prenom = "Jacques", .numero = 1234567890 },
-		[1] = { .nom = "Ouye", .prenom = "Jacques", .numero = 1111111111 },
-		[2] = { .nom = "Aite", .prenom = "Jacques", .numero = 4242424242 }
-		};
-
-		printf("Nom\t[0]:\t%s\nPrenom\t[1]:\t%s\nNumero\t[2]:\t%u\n",
-				contacts[0].nom, contacts[1].prenom, contacts[2].numero);
-	}
+	printf("Nom\t[0]:\t%s\nPrenom\t[1]:\t%s\nNumero\t[2]:\t%u\n",
+			contacts[0].nom, contacts[1].prenom, contacts[2].numero);
+}
 ```
 
 Le resultat sera :
@@ -93,3 +95,9 @@ Le resultat sera :
 ![](https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/output_struct_array.png)
 
 Nous avons donc affiche le `nom` du `contact[0]`, le `prenom` du `contact[1]` et le `numero` du `contact[2]`.
+
+<div align="right">
+
+[![][back-to-top]](#readme-top)
+
+</div>

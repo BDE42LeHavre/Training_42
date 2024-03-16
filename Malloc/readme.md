@@ -9,7 +9,7 @@ Ainsi, `char *str = malloc(5);` demandera au systeme d'allouer 5 **bytes** pour 
 Il est preferable de preciser la taille du type de variable qu'on utilise via `sizeof()`, comme suit :
 
 ```C
-	char *str = malloc(sizeof(char) * 5);
+char *str = malloc(sizeof(char) * 5);
 ```
 
 <img src=https://github.com/BDE42LeHavre/Training_42/blob/main/imgs/char_array_size.jpg width=512>
@@ -17,7 +17,7 @@ Il est preferable de preciser la taille du type de variable qu'on utilise via `s
 Dans le cas ou on a `void *nbr` au lieu de `int *nbr`, nous allons devoir preciser le type de retour de la fonction `malloc()` avec un **cast**, comme suit :
 
 ```C
-	void *nbr = (int *)malloc(sizeof(int) * 3);
+void *nbr = (int *)malloc(sizeof(int) * 3);
 ```
 
 Cela permettra donc de demander une allocation de memoire d'une taille de 3 * 4 **bytes**, puisqu'un `int` fait 4 **bytes**.
@@ -33,9 +33,9 @@ Mais si, pour une raison ou pour une autre, le `malloc()` echoue, il faut mettre
 Pour cela, il suffit de faire :
 
 ```C
-	char *str = malloc(sizeof(char) * 5);
-	if (!str)
-		return ;// ou bien tout ce que vous voulez, mais le programme doit s'arreter dans la plupart des cas
+char *str = malloc(sizeof(char) * 5);
+if (!str)
+	return ;// ou bien tout ce que vous voulez, mais le programme doit s'arreter dans la plupart des cas
 ```
 
 Sans cette protection, le programme va essayer d'executer la suite du code, ce qui va surement finir en **crash**.
@@ -51,11 +51,11 @@ Pour ceci, nous avons la fonction `free()`. Cette fonction prend un pointeur en 
 Il suffit d'ecrire :
 
 ```C
-	char *str = malloc(sizeof(char) * 5);
-	if (!str)
-		return ;
+char *str = malloc(sizeof(char) * 5);
+if (!str)
+	return ;
 
-	// on fait ce qu'on veut
+[...]
 
-	free(str);
+free(str);
 ```
